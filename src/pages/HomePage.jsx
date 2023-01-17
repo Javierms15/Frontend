@@ -17,8 +17,9 @@ export const HomePage = () => {
     }
 
     const markerIcon= new L.Icon({
-        iconUrl: require("res/Examen/marker.png"),
+        iconUrl: import("res/Examen/marker.png"),
         iconSize: [35,45],
+        iconAnchor: [17,46],
     });
 
     return (
@@ -39,10 +40,10 @@ export const HomePage = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
-                    <Marker
-                      position={[36.72016, -4.420034]}
-                      icon={markerIcon}
-                    />
+                  <Marker
+                    position={[36.72016, -4.420034]}
+                    icon={markerIcon}
+                  />
 
                 </MapContainer>
               </div>
