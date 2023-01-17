@@ -17,7 +17,7 @@ export const HomePage = () => {
     }
 
     const markerIcon= new L.icon({
-        iconUrl: requestAnimationFrame("res/Examen(marker.png"),
+        iconUrl: requestAnimationFrame("res/Examen/marker.png"),
         iconSize: [35,45],
     });
 
