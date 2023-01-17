@@ -18,7 +18,7 @@ export const HomePage = () => {
     }
 
     const markerIcon= new L.Icon({
-        iconUrl: image1,
+        iconUrl: require(image1),
         iconSize: [35,45],
         iconAnchor: [17,46],
     });
