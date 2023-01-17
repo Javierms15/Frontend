@@ -2,7 +2,7 @@ import { Filter, Navbar } from "../components";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { Marker } from "react-leaflet";
 import L from "leaflet";
-import imagen1 from "./marker.png";
+
 
 export const HomePage = () => {
 
@@ -18,7 +18,6 @@ export const HomePage = () => {
     }
 
     const markerIcon= new L.Icon({
-        iconUrl: imagen1,
         iconSize: [35,45],
         iconAnchor: [17,46],
     });
