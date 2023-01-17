@@ -37,8 +37,7 @@ export const HomePage = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
-                  <Marker
-                    position={[36.72016, -4.420034]}>
+                  <Marker position={[36.72016, -4.420034]}>
                     <Popup>
                       Centro. <br /> Easily customizable.
                     </Popup>
