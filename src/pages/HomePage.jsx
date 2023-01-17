@@ -38,8 +38,11 @@ export const HomePage = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
                   <Marker
-                    position={[36.72016, -4.420034]}
-                  />
+                    position={[36.72016, -4.420034]}>
+                    <Popup>
+                      Centro. <br /> Easily customizable.
+                    </Popup>
+                  </Marker>
 
                 </MapContainer>
               </div>
