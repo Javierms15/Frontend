@@ -17,10 +17,7 @@ export const HomePage = () => {
         notLoggedIn = 'inline';
     }
 
-    const markerIcon= new L.Icon({
-        iconSize: [35,45],
-        iconAnchor: [17,46],
-    });
+    
 
     return (
         <div className="container-fluid h-100">
@@ -42,7 +39,6 @@ export const HomePage = () => {
                   />
                   <Marker
                     position={[36.72016, -4.420034]}
-                    icon={markerIcon}
                   />
 
                 </MapContainer>
