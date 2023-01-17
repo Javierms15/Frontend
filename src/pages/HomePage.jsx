@@ -16,7 +16,7 @@ export const HomePage = () => {
         notLoggedIn = 'inline';
     }
 
-    const markerIcon= new L.icon({
+    const markerIcon= new L.Icon({
         iconUrl: require("res/Examen/marker.png"),
         iconSize: [35,45],
     });
