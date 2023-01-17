@@ -5,15 +5,7 @@ import L from "leaflet";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const MONGO_URL = 'mongodb+srv://javierms15:javierms20@cluster0.uqz7xkn.mongodb.net/test';
 
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios.get(MONGO_URL + '/logs/logs')
-      .then(res => setData(res.data))
-      .catch(err => console.log(err));
-  }, []);
 
 
 export const HomePage = () => {
@@ -56,14 +48,7 @@ export const HomePage = () => {
                     </Popup>
                   </Marker>
 
-                    {data.map(item => (
-                    <Marker position={[item.lon, item.lat]}>
-                    <Popup>
-                      Centro. <br /> Easily customizable.
-                    </Popup>
-                  </Marker>
-                    ))}
-
+                  
                 </MapContainer>
               </div>
                 </div>
