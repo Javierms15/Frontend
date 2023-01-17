@@ -1,5 +1,5 @@
 import { Filter, Navbar } from "../components";
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer,Popup } from "react-leaflet";
 import { Marker } from "react-leaflet";
 import L from "leaflet";
 
