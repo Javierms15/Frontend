@@ -2,7 +2,7 @@ import { Filter, Navbar } from "../components";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { Marker } from "react-leaflet";
 import L from "leaflet";
-import imagen1 from "./Examen/marker.png";
+import imagen1 from "./marker.png";
 
 export const HomePage = () => {
 
