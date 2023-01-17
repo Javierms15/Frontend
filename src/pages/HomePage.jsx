@@ -1,6 +1,7 @@
 import { Filter, Navbar } from "../components";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { Marker } from "react-leaflet";
+import L from "leaflet";
 
 export const HomePage = () => {
 
@@ -14,6 +15,11 @@ export const HomePage = () => {
         loggedIn = 'none';
         notLoggedIn = 'inline';
     }
+
+    const markerIcon= new L.icon({
+        iconUrl: requestAnimationFrame("res/Examen(marker.png"),
+        iconSize: [35,45],
+    });
 
     return (
         <div className="container-fluid h-100">
@@ -33,6 +39,11 @@ export const HomePage = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
+                    <Marker
+                      position={[36.72016, -4.420034]}
+                      icon={markerIcon}
+                    />
+
                 </MapContainer>
               </div>
                 </div>
