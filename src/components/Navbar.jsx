@@ -62,7 +62,7 @@ export const Navbar = () => {
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">[{sessionStorage.getItem("user")}]</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">[{sessionStorage.getItem("token")}]</a>
                         </div>
       </li></NavLink>
                         <Link className="nav-link" style= {{display: loggedIn}} to="/" onClick={onLogout}>Cerrar Sesión</Link>
