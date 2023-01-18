@@ -61,7 +61,7 @@ export const Navbar = () => {
                         Mi Perfil
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">[{sessionStorage.getItem("user")}]</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         </div>
       </li></NavLink>
