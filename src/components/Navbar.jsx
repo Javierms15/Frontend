@@ -55,7 +55,7 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Inicio</NavLink>
-                        <NavLink className="nav-link" aria-current="page" to={'/'}>
+                        <NavLink className="nav-link" aria-current="page" to={'/'} style= {{display: loggedIn}}>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Mi Perfil
@@ -63,8 +63,6 @@ export const Navbar = () => {
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
                         </div>
       </li></NavLink>
                         <Link className="nav-link" style= {{display: loggedIn}} to="/" onClick={onLogout}>Cerrar Sesión</Link>
