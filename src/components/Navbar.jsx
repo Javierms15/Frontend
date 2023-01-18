@@ -53,6 +53,7 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Inicio</NavLink>
+                        <NavLink className="nav-link" aria-current="page" to={'/'}>Mi Perfil</NavLink>
                         <Link className="nav-link" style= {{display: loggedIn}} to="/" onClick={onLogout}>Cerrar Sesión</Link>
                         <NavLink className="nav-link" style= {{display: notLoggedIn}} to="/login">Iniciar Sesión</NavLink>
                     </div>
