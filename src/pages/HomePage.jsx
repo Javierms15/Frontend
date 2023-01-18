@@ -60,6 +60,10 @@ export const HomePage = () => {
                   
                 </MapContainer>
               </div>
+              {doc.map(s => (
+                <><p>{[s.nombre]}</p><br /></>
+
+              ))}
                 </div>
             </div>
         </div>
