@@ -39,8 +39,6 @@ export const LoginPage = () => {
                 location.reload();
             });
             sessionStorage.setItem("user", result.user.email)
-            sessionStorage.setItem("nombre", result.user.name)
-            sessionStorage.setItem("imagen", result.user.picture)
             // ...
         }).catch((error) => {
             const errorCode = error.code;

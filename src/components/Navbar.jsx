@@ -55,7 +55,13 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Inicio</NavLink>
-                        <NavLink className="nav-link" aria-current="page" to={'/'}>Mi Perfil</NavLink>
+                        <NavLink className="nav-link" aria-current="page" to={'/'}>Mi Perfil
+                        <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px">
+                            <li><a class="dropdown-item rounded-2 active" href="#">Action</a></li>
+                            <li><a class="dropdown-item rounded-2" href="#">Another action</a></li>
+                            <li><a class="dropdown-item rounded-2" href="#">Something else here</a></li>
+                            
+                        </ul></NavLink>
                         <Link className="nav-link" style= {{display: loggedIn}} to="/" onClick={onLogout}>Cerrar Sesión</Link>
                         <NavLink className="nav-link" style= {{display: notLoggedIn}} to="/login">Iniciar Sesión</NavLink>
                     </div>
