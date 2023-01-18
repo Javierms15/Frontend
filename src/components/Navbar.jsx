@@ -56,12 +56,17 @@ export const Navbar = () => {
                     <div className="navbar-nav">
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Inicio</NavLink>
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Mi Perfil
-                        <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px">
-                            <li><a class="dropdown-item rounded-2 active" href="#">Action</a></li>
-                            <li><a class="dropdown-item rounded-2" href="#">Another action</a></li>
-                            <li><a class="dropdown-item rounded-2" href="#">Something else here</a></li>
-                            
-                        </ul></NavLink>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+      </li></NavLink>
                         <Link className="nav-link" style= {{display: loggedIn}} to="/" onClick={onLogout}>Cerrar Sesión</Link>
                         <NavLink className="nav-link" style= {{display: notLoggedIn}} to="/login">Iniciar Sesión</NavLink>
                     </div>
