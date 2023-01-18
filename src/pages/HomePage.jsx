@@ -62,7 +62,7 @@ export const HomePage = () => {
               </div>
               Aparcamientos:<br/>
               {doc.map(s => (
-                <><p>NOmbre: {[s.nombre]} Dirección: {[s.direccion]} Latitud: {[s.latitud]} Longitud: {[s.longitud]} Capacidad: {[s.capacidad]} Libres: {[s.libres]} Correo: {[s.correo]}</p><br /></>
+                <><p>Nombre: {[s.nombre]} Dirección: {[s.direccion]} Latitud: {[s.latitud]} Longitud: {[s.longitud]} Capacidad: {[s.capacidad]} Libres: {[s.libres]} Correo: {[s.correo]}</p><br /></>
 
               ))}
                 </div>
