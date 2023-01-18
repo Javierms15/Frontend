@@ -53,8 +53,8 @@ export const HomePage = () => {
 
                     {doc.map(m => (
                       <Marker 
-                      key={doc.poiID} 
-                      position={[doc.latitud, doc.longitud]}>
+                      key={m.poiID} 
+                      position={[m.latitud, m.longitud]}>
                       
                       <Popup>
                         Centro. <br /> Easily customizable.
