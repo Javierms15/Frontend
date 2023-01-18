@@ -46,17 +46,10 @@ export const Filter = () => {
                         <span className="text-muted align-items-center">{`${precioMax} €`}</span>
                     </div> */}
                     <div className="mb-3">
-                        <label htmlFor="linea" className="form-label">Linea</label>
+                        <label htmlFor="linea" className="form-label">Dirección</label>
                         <input type="text" name="linea" id="linea" className="form-control" onChange={onInputChange} />
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="sentido" className="form-label">Sentido</label>
-                        <input type="number" name="sentido" id="sentido" className="form-control" min={1} onChange={onInputChange} />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="nombreParada" className="form-label">Nombre de la parada</label>
-                        <input type="text" name="nombreParada" id="nombreParada" className="form-control" onChange={onInputChange} />
-                    </div>
+                    
                     <div className="mb-3">
                         <h5>Coordenadas</h5>
                         <MapContainer center={[36.72016, -4.420034]} zoom={12} style={{ height: 300, width: "100%" }}>
