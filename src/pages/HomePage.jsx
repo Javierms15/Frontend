@@ -37,7 +37,7 @@ export const HomePage = () => {
                 <div className="col-lg-6 mt-4">
                 <MapContainer
                   center={[36.72016, -4.420034]}
-                  zoom={20}
+                  zoom={15}
                   style={{ height: 600, width: 500 }}
                 >
                   <TileLayer
