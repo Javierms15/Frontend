@@ -6,8 +6,6 @@ import doc from "./options.json"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-console.log(doc)
-
 
 
 export const HomePage = () => {
