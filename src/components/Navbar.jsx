@@ -1,6 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom"
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
+import doc from "./aparcamientos.json"
 
 const firebaseConfig = {
     apiKey: "AIzaSyAAllBcw48DrBBr7FbV6HUC7aE11DrA-54",
@@ -10,6 +11,8 @@ const firebaseConfig = {
     messagingSenderId: "806246359168",
     appId: "1:806246359168:web:a08ca0aee736e8bf974665"
   };
+
+  console.log(doc)
 
 const app = initializeApp(firebaseConfig);
 

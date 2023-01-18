@@ -1,0 +1,103 @@
+[
+  {
+    "poiID": 1,
+    "nombre": "Salitre",
+    "direccion": "Calle Salitre",
+    "latitud": 36.7132149,
+    "longitud": -4.4276681,
+    "capacidad": 342,
+    "libres": 129,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 2,
+    "nombre": "Cervantes",
+    "direccion": "Calle Cervantes",
+    "latitud": 36.7208633,
+    "longitud": -4.4119148,
+    "capacidad": 414,
+    "libres": 55,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 3,
+    "nombre": "El Palo",
+    "direccion": "Calle Alonso Carrillo De Albornoz",
+    "latitud": 36.721035,
+    "longitud": -4.3607192,
+    "capacidad": 129,
+    "libres": 6,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 4,
+    "nombre": "Av. de Andalucía",
+    "direccion": "Avenida De Andalucía",
+    "latitud": 36.7173271,
+    "longitud": -4.427712,
+    "capacidad": 517,
+    "libres": 101,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 5,
+    "nombre": "Camas",
+    "direccion": "Calle Camas",
+    "latitud": 36.7202072,
+    "longitud": -4.4244981,
+    "capacidad": "None",
+    "libres": 30,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 6,
+    "nombre": "Cruz De Humilladero",
+    "direccion": "Plaza Cruz De Humilladero",
+    "latitud": 36.7118645,
+    "longitud": -4.4409118,
+    "capacidad": 100,
+    "libres": 88,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 8,
+    "nombre": "Alcazaba",
+    "direccion": "Plaza La Alcazaba",
+    "latitud": 36.7224312,
+    "longitud": -4.4165168,
+    "capacidad": "None",
+    "libres": 45,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 9,
+    "nombre": "San Juan De La Cruz",
+    "direccion": "Compositor Lemberg Ruiz",
+    "latitud": 36.717865,
+    "longitud": -4.4332781,
+    "capacidad": 410,
+    "libres": 314,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 10,
+    "nombre": "Pz. de la Marina",
+    "direccion": "Plaza De La Marina",
+    "latitud": 36.7174149,
+    "longitud": -4.4200468,
+    "capacidad": 256,
+    "libres": 2,
+    "correo": "aparcamientos@malaga.eu"
+  },
+  {
+    "poiID": 12,
+    "nombre": "Tejón y Rodriguez",
+    "direccion": "Calle Tejón Y Rodriguez",
+    "latitud": 36.7235985,
+    "longitud": -4.4214821,
+    "capacidad": "None",
+    "libres": 32,
+    "correo": "aparcamientos@malaga.eu"
+  }
+]
+
