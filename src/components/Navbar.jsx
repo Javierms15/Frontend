@@ -57,12 +57,12 @@ export const Navbar = () => {
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Inicio</NavLink>
                         <NavLink className="nav-link" aria-current="page" to={'/'} style= {{display: loggedIn}}>
                         <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
     Mi Perfil
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">{[sessionStorage.getItem("user")]}</a></li>
-    <li><a class="dropdown-item" href="#">{[sessionStorage.getItem("token")]}</a></li>
+    <li><a class="dropdown-item" href="#">Usuario: {[sessionStorage.getItem("user")]}</a></li>
+    <li><a class="dropdown-item" href="#">Token :{[sessionStorage.getItem("token")]}</a></li>
   </ul>
 </div>
                        </NavLink>
