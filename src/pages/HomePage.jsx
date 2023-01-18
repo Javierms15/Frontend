@@ -52,7 +52,7 @@ export const HomePage = () => {
                       position={[m.latitud, m.longitud]}>
                       
                       <Popup>
-                        Nombre:{[m.nombre]} <br /> Dirección: {[m.direccion]}.
+                        Nombre: {[m.nombre]} <br /> Dirección: {[m.direccion]}.
                       </Popup>
 
                     </Marker>
