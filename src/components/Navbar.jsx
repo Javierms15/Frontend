@@ -56,15 +56,16 @@ export const Navbar = () => {
                     <div className="navbar-nav">
                         <NavLink className="nav-link" aria-current="page" to={'/'}>Inicio</NavLink>
                         <NavLink className="nav-link" aria-current="page" to={'/'} style= {{display: loggedIn}}>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mi Perfil
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">[{sessionStorage.getItem("user")}]</a>
-                        <a class="dropdown-item" href="#">[{sessionStorage.getItem("token")}]</a>
-                        </div>
-      </li></NavLink>
+                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Mi Perfil
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">{[sessionStorage.getItem("user")]}</a></li>
+    <li><a class="dropdown-item" href="#">{[sessionStorage.getItem("token")]}</a></li>
+  </ul>
+</div>
+                       </NavLink>
                         <Link className="nav-link" style= {{display: loggedIn}} to="/" onClick={onLogout}>Cerrar Sesión</Link>
                         <NavLink className="nav-link" style= {{display: notLoggedIn}} to="/login">Iniciar Sesión</NavLink>
                     </div>
