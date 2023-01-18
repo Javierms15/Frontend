@@ -6,6 +6,7 @@ import doc from "./aparcamientos.json"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+console.log(doc)
 
 
 
@@ -50,15 +51,17 @@ export const HomePage = () => {
 
                   </Marker>
 
-                  {doc.map(m => (
-                    <Marker key={doc.poiID} position={[doc.latitud, doc.longitud]}>
+                    {doc.map(m => (
+                      <Marker 
+                      key={doc.poiID} 
+                      position={[doc.latitud, doc.longitud]}>
                       
-                    <Popup>
-                      Centro. <br /> Easily customizable.
-                    </Popup>
+                      <Popup>
+                        Centro. <br /> Easily customizable.
+                      </Popup>
 
-                  </Marker>
-                  ))}
+                    </Marker>
+                    ))}
                   
                 </MapContainer>
               </div>
