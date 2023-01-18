@@ -2,7 +2,7 @@ import { Filter, Navbar } from "../components";
 import { MapContainer, TileLayer,Popup } from "react-leaflet";
 import { Marker } from "react-leaflet";
 import L from "leaflet";
-import doc from "./aparcamientos.json"
+import doc from "./options.json"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
