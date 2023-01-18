@@ -37,19 +37,14 @@ export const HomePage = () => {
                 <div className="col-lg-6 mt-4">
                 <MapContainer
                   center={[36.72016, -4.420034]}
-                  zoom={10}
+                  zoom={20}
                   style={{ height: 600, width: 500 }}
                 >
                   <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
-                  <Marker position={[36.72016, -4.420034]}>
-                    <Popup>
-                      Centro. <br /> Easily customizable.
-                    </Popup>
-
-                  </Marker>
+                  
 
                     {doc.map(m => (
                       <Marker 
@@ -57,7 +52,7 @@ export const HomePage = () => {
                       position={[m.latitud, m.longitud]}>
                       
                       <Popup>
-                        Centro. <br /> Easily customizable.
+                        Nombre:{[m.nombre]} <br /> Dirección: {[m.direccion]}.
                       </Popup>
 
                     </Marker>
